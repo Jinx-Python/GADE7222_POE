@@ -1,0 +1,40 @@
+{
+  "dialogues": [
+    {
+      "charType": 0,
+      "name": "Racer",
+      "charImage": "Racer_Portrait",
+      "dialougeTxt": "I can't wait to get this race started! Uhhh... What race is this again?"
+    },
+    {
+      "charType": 1,
+      "name": "Manager",
+      "charImage": "Manager_Portrait",
+      "dialougeTxt": "Really!? You've been racing for this long and still don't know the different types of races?"
+    },
+    {
+      "charType": 0,
+      "name": "Racer",
+      "charImage": "Racer_Portrait",
+      "dialougeTxt": "A race is a race, nothing else matters."
+    },
+    {
+      "charType": 1,
+      "name": "Manager",
+      "charImage": "Manager_Portrait",
+      "dialougeTxt": "Why do I even bother... This is the Checkpoint Race, it's basically a warm-up. You just have to go through all the checkpoints within a time limit."
+    },
+    {
+      "charType": 1,
+      "name": "Manager",
+      "charImage": "Manager_Portrait",
+      "dialougeTxt": "Each checkpoint you reach will give you some exstra time to finish the race. You win by reaching the last checkpoint within the time limit."
+    },
+    {
+      "charType": 0,
+      "name": "Racer",
+      "charImage": "Racer_Portrait",
+      "dialougeTxt": "Oh, that's easy. Let's go!"
+    }
+  ]
+}

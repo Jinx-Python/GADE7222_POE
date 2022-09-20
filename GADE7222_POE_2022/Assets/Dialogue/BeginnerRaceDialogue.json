@@ -1,0 +1,40 @@
+{
+  "dialogues": [
+    {
+      "charType": 0,
+      "name": "Racer",
+      "charImage": "Racer_Portrait",
+      "dialougeTxt": "I can't wait any longer, when does the race start!?"
+    },
+    {
+      "charType": 1,
+      "name": "Manager",
+      "charImage": "Manager_Portrait",
+      "dialougeTxt": "Do you even know what race this is?"
+    },
+    {
+      "charType": 0,
+      "name": "Racer",
+      "charImage": "Racer_Portrait",
+      "dialougeTxt": "Uhhhh..."
+    },
+    {
+      "charType": 1,
+      "name": "Manager",
+      "charImage": "Manager_Portrait",
+      "dialougeTxt": "This is the Beginner Race, you'll be racing agains other contestants this time."
+    },
+    {
+      "charType": 1,
+      "name": "Manager",
+      "charImage": "Manager_Portrait",
+      "dialougeTxt": "Just follow the waypoints to complete a lap, complete three laps to finish the race."
+    },
+    {
+      "charType": 0,
+      "name": "Racer",
+      "charImage": "Racer_Portrait",
+      "dialougeTxt": "Finally, some action! I can't wait!"
+    }
+  ]
+}
