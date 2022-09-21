@@ -57,7 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\DialogueTrigger.cs" />
-    <Compile Include="Assets\scripts\camera_follow.cs" />
+    <Compile Include="Assets\scripts\checkPoint.cs" />
+    <Compile Include="Assets\scripts\finish_checkpoint.cs" />
+    <Compile Include="Assets\scripts\camra.cs" />
+    <Compile Include="Assets\scripts\raceTime.cs" />
     <Compile Include="Assets\scripts\DialogueManager.cs" />
     <Compile Include="Assets\scripts\player_controler.cs" />
   </ItemGroup>
