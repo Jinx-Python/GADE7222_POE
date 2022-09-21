@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/CheckpointDialogue.unity
+- path: Assets/Scenes/BeginnerDialogue.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
