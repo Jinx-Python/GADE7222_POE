@@ -1,0 +1,13 @@
+[NAME=Racer]So this is the big leagues...
+
+[NAME=Manager]Yep, now you need to keep your eyes peeled instead of daydreaming the whole time.
+
+[NAME=Racer]What's that supposed to mean?
+
+[NAME=Manager]It means that you need to remember that this is the Advanced Race and won't be as easy as the others.
+
+This will be similar to the Beginner Race but now the opponets are better and the race track has short-cuts you need to look out for.
+
+[NAME=Racer]You take this too seriously, this will be a breeze!
+
+EndQueue

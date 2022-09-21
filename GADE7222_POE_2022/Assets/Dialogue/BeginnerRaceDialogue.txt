@@ -1,0 +1,13 @@
+[NAME=Racer]I can't wait any longer, when does the race start!?
+
+[NAME=Manager]Do you even know what race this is?
+
+[NAME=Racer]Uhhhh...
+
+[NAME=Manager]This is the Beginner Race, you'll be racing agains other contestants this time.
+
+Just follow the waypoints to complete a lap, complete three laps to finish the race.
+
+[NAME=Racer]Finally, some action!
+
+EndQueue
