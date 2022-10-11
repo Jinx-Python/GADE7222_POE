@@ -8,6 +8,12 @@ public class WaypointManager : MonoBehaviour
 
     public static WaypointManager instance;
 
+    [SerializeField] private Transform waypoint1Transform;
+    [SerializeField] private Transform waypoint2Transform;
+    [SerializeField] private Transform waypoint3Transform;
+    [SerializeField] private Transform waypoint4Transform;
+    [SerializeField] private Transform waypoint5Transform;
+    public LinkedList<Transform> waypoints = new LinkedList<Transform>();
     private void Awake()
     {
         if(instance == null)
@@ -16,24 +22,33 @@ public class WaypointManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-
-    public Transform GetNextWaypoint(int currentWaypointID, Node node)
+    public object this[int index]
     {
-        Transform point;
-        int way = 1; 
-        while(node != null)
-        {
-            if(way == 1)
-            {
-                point = node; 
-            }    
-        }
+        get { return this; }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        waypoints.AddLast(waypoint1Transform);
+        waypoints.AddLast(waypoint2Transform);
+        waypoints.AddLast(waypoint3Transform);
+        waypoints.AddLast(waypoint4Transform);
+        waypoints.AddLast(waypoint5Transform);
+
+    }
+
+    private Node head;
+    private int count;
+
+
+    public object GetNextWaypoint(int currentWaypointID)
+    {
+       Node node = this.head;
+        for(int i = 0; i < currentWaypointID; i++)
+            node = node.Next;
+
+        return node;
+    
     }
 
     // Update is called once per frame

@@ -60,11 +60,12 @@
     <Compile Include="Assets\scripts\checkPoint.cs" />
     <Compile Include="Assets\scripts\finish_checkpoint.cs" />
     <Compile Include="Assets\scripts\camra.cs" />
+    <Compile Include="Assets\scripts\WaypointManager.cs" />
+    <Compile Include="Assets\scripts\Node.cs" />
     <Compile Include="Assets\scripts\Mesh_Agents.cs" />
     <Compile Include="Assets\scripts\raceTime.cs" />
     <Compile Include="Assets\scripts\DialogueManager.cs" />
     <Compile Include="Assets\scripts\player_controler.cs" />
-    <Compile Include="Assets\scripts\WaypointManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

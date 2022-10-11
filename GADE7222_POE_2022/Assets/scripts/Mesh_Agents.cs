@@ -6,27 +6,16 @@ using UnityEngine.AI;
 public class Mesh_Agents : MonoBehaviour
 {
 
-    [SerializeField] private Transform waypoint1Transform;
-    [SerializeField] private Transform waypoint2Transform;
-    [SerializeField] private Transform waypoint3Transform;
-    [SerializeField] private Transform waypoint4Transform;
-    [SerializeField] private Transform waypoint5Transform;
 
-    int index = 1;
+    int index = 0;
 
-    public LinkedList<Transform> waypoints = new LinkedList<Transform>();
-
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
 
     private void Start()
     {
-        waypoints.AddLast(waypoint1Transform);
-        waypoints.AddLast(waypoint2Transform);
-        waypoints.AddLast(waypoint3Transform);
-        waypoints.AddLast(waypoint4Transform);
-        waypoints.AddLast(waypoint5Transform);
-        agent.destination = waypoint1Transform.position;
-
+        agent = GetComponent<NavMeshAgent>();
+        agent.destination = (Vector3)WaypointManager.instance.GetNextWaypoint(index);
+        index++;
     }
 
     private void Awake()
@@ -45,7 +34,8 @@ public class Mesh_Agents : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
+        agent.destination = (Vector3)WaypointManager.instance.GetNextWaypoint(index);
+        index++;
                
     }
 }
