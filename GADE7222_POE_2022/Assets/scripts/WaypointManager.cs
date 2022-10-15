@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class WaypointManager : MonoBehaviour
 {
 
     public static WaypointManager instance;
+    public NavMeshAgent agent;
 
     [SerializeField] private Transform waypoint1Transform;
     [SerializeField] private Transform waypoint2Transform;
@@ -20,11 +23,13 @@ public class WaypointManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
+        agent = GetComponent<NavMeshAgent>();
     }
 
     public object this[int index]
     {
         get { return this; }
+        
     }
 
     private void Start()
@@ -35,17 +40,24 @@ public class WaypointManager : MonoBehaviour
         waypoints.AddLast(waypoint4Transform);
         waypoints.AddLast(waypoint5Transform);
 
+        LinkedList.instance.push(waypoint1Transform);
+        LinkedList.instance.push(waypoint2Transform);
+
+        agent.destination = LinkedList.instance.
+
     }
 
-    private Node head;
+    Node hea;
+
     private int count;
 
 
     public object GetNextWaypoint(int currentWaypointID)
     {
-       Node node = this.head;
-        for(int i = 0; i < currentWaypointID; i++)
-            node = node.Next;
+
+        LinkedListNode<Transform> node = waypoints.First;
+
+        agent.destination = node.Value.position;
 
         return node;
     
@@ -54,6 +66,35 @@ public class WaypointManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //LinkedListNode<Transform> node = waypoints.First;
+
+        //agent.destination = node.Value.position;
+        //waypoints.RemoveFirst();
+    }
+
+    /*private void OnTriggerEnter(Collider other)
+    {
+        LinkedListNode<Transform> node = waypoints.First;
+
+        agent.destination = node.Value.position;
+        waypoints.AddLast((Transform)node.Value);
+    }*/
+
+    public Transform GetNth(int index)
+    {
+        Node node = hea;
+
+        int count = 0;
+        while (node != null)
+        {
+            if (count == index)
+            {
+                return node.data;
+
+            }
+            count++;
+            node = node.next;
+        }
+        return null;
     }
 }

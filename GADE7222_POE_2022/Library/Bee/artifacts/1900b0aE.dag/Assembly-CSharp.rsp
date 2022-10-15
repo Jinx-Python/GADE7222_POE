@@ -359,6 +359,7 @@
 "Assets/scripts/DialogueManager.cs"
 "Assets/scripts/DialogueTrigger.cs"
 "Assets/scripts/finish_checkpoint.cs"
+"Assets/scripts/LinkedList.cs"
 "Assets/scripts/Mesh_Agents.cs"
 "Assets/scripts/Node.cs"
 "Assets/scripts/player_controler.cs"
